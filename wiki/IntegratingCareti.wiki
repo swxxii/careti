@@ -1,0 +1,57 @@
+#summary Using in your own web application
+
+= Integration Examples. =
+
+First, download and include the script in your page header.
+
+{{{
+<script type="text/javascript" src="careti.js">
+}}}
+
+Careti is neatly wrapped up in the `CARETI` object. There are a few different ways to attach the correction features to a `<textarea>` element. Simply insert the appropriate function calls at the end of the main careti.js script, or you include as a separate script or inline JS code.
+
+=== Passive Attachment ===
+
+This attaches once to every `<textarea>` in the document. Use for static pages. 
+{{{
+CARETI.init(); // first you must initialise
+CARETI.attachBody('textarea'); // attach to every textarea in document
+}}}
+
+Note the flexibility to specify the element type. You could also attach to `<input>` type elements although the behaviour is not ideal (see [UsingCareti quirks] page).
+
+=== Deep IFRAME Attachment ===
+
+Some pages contain `<iframe>` elements which may contain `<textarea>` elements within them. The passive attachment mode will not find these, so we have a separate function.
+
+{{{
+CARETI.init(); // initialise first
+CARETI.attachInsideIframes('textarea');
+}}}
+
+
+=== Aggressive Attachment ===
+
+The aggressive attachment mode polls document for changes and should only be used on dynamic pages, as it is more expensive. This is the behaviour of the Greasemonkey version of the script.
+
+{{{
+// no initialisation needed for polling version
+CARETI.attachPoller(1000); // poll interval of one second
+}}}
+
+The aggressive mode also checks inside `<iframe>` elements but only one level deep, e.g. The `<textarea>` with `id="1"` would be found, but the one with `id="2"` would not. 
+
+{{{
+<iframe>
+  <html>
+    <body>
+      <textarea id="1" />
+      <iframe>
+        <html>
+          <body><textarea id="2" /></body>
+        </html>
+      </iframe>
+    </body>
+  </html>
+</iframe>
+}}}
