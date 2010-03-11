@@ -1,0 +1,5 @@
+#summary Script usage & quirks
+
+  * Works on INPUT elements but has scrolling issues if there is more text in the box than can be shown.
+  * You don't want it on INPUT elements (think login names)
+  * No IE support yet. Not a priority. If you want it, send me the code.
