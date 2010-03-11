@@ -58,7 +58,7 @@ The aggressive mode also checks inside `<iframe>` elements but only one level de
 
 === Attaching to individual elements ===
 
-For JavaScript developers, the script can also be attached to individual elements retrieved from the DOM. For example:
+For JavaScript developers, Careti can also be attached to individual elements retrieved from the DOM. For example:
 
 {{{
 var elem = document.getElementById('my_element');
