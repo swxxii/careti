@@ -8,7 +8,7 @@ First, download and include the script in your page header.
 <script type="text/javascript" src="careti.js">
 }}}
 
-Careti is neatly wrapped up in the `CARETI` object. There are a few different ways to attach the correction features to a `<textarea>` element. Simply insert the appropriate function calls at the end of the main careti.js script, or you include as a separate script or inline JS code.
+Careti is neatly wrapped up in the `CARETI` object. There are a few different ways to attach the correction features to a `<textarea>` element. Simply insert the appropriate function calls at the end of the main `careti.js` script, or include as a separate script or inline `script` code.
 
 === Passive Attachment ===
 
@@ -55,3 +55,14 @@ The aggressive mode also checks inside `<iframe>` elements but only one level de
   </html>
 </iframe>
 }}}
+
+=== Attaching to individual elements ===
+
+For JavaScript developers, the script can also be attached to individual elements retrieved from the DOM. For example:
+
+{{{
+var elem = document.getElementById('my_element');
+CARETI.addEventListeners(elem);
+}}}
+
+This will add the required event listeners, enabling auto correction on the element you retrieved. The `addEventListeners` function can also be used within `for` loops after retrieving a set of elements, or anywhere else you like.
