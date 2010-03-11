@@ -1,10 +1,15 @@
 #summary Features to be added or improved.
 
-I may move to issue tracker one day.
+I may move to issue tracker one day. Please comment.
 
-== TODO List ==
+== TODO List (easy) ==
 
-  * Need to redo the
-  * Add titles, e.g. Mr. Mrs. etc.
-  * Stop capitalising after "etc." "et al." and other common inline abbreviations
-  * Add support for two-word corrections e.g. "I snot" -> "is not" 
+  * Capitalisation exclusions e.g. "etc." "et al." and other common inline abbreviations.
+  * Capitalise titles, e.g. Mr. Mrs. Etc. 
+  * Add unobtrusive decal (e.g. BG image) to the textareas indicating correction is active.
+
+== TODO List (hard) ==
+
+  * Add support for two-word corrections e.g. "i snot" -> "is not". 
+  * Popup a checkbox allowing users to enable/disable on a per-element basis.
+  * Preferences page allowing users to enable/disable correction subsets (accents,main,days,months) and remember in a cookie.
