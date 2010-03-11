@@ -1,6 +1,6 @@
 #summary Using in your own web application
 
-= Integration Examples. =
+= Integration Examples =
 
 First, download and include the script in your page header.
 
