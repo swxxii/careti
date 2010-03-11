@@ -7,6 +7,6 @@
 
 == Quirks & usage notes ==
 
-  * It will work on <input> elements but has scrolling issues if there is more text in the box than can be shown.
-  * You really don't want it on all <input> elements (think login names)
+  * It will work on INPUT elements but has scrolling issues if there is more text in the box than can be shown.
+  * You really don't want it on all INPUT elements (think login names)
   * No IE support yet. Not a priority. If you want it, send me the code.
