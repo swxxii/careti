@@ -1,0 +1,12 @@
+#summary Script usage & quirks
+
+== How to use Careti ==
+
+  * Install as a Greasemonkey script to apply to all textarea elements across the whole web.
+  * Integrate into your own web application
+
+== Quirks & usage notes ==
+
+  * It will work on INPUT elements but has scrolling issues if there is more text in the box than can be shown.
+  * You really don't want it on all INPUT elements (think login names)
+  * No IE support yet. Not a priority. If you want it, send me the code.
