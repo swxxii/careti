@@ -1,9 +1,10 @@
-#summary Yet to be implemented features
+#summary Features to be added or improved.
 
-List of features I plan to implement/improve. May move to issue tracker one day.
+I may move to issue tracker one day.
 
 == TODO List ==
 
-  * Add titles, e.g. Mr. Mrs. Etc.
-  * Don't capitalise after "etc." "et al." and other common inline abbreviations
+  * Need to redo the
+  * Add titles, e.g. Mr. Mrs. etc.
+  * Stop capitalising after "etc." "et al." and other common inline abbreviations
   * Add support for two-word corrections e.g. "I snot" -> "is not" 
