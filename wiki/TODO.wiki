@@ -1,10 +1,8 @@
 #summary Yet to be implemented features
 
-= Introduction =
-
 List of features I plan to implement/improve. May move to issue tracker one day.
 
-= Details =
+== TODO List ==
 
   * Add titles, e.g. Mr. Mrs. Etc.
   * Don't capitalise after "etc." "et al." and other common inline abbreviations
