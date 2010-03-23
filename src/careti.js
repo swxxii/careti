@@ -1,18 +1,18 @@
 /*
     CARETI: A JavaScript auto-correct library for textarea elements
     
-    Author:		Simon Whitehead
-    Version:	1.0 
-    Updated:	11-03-2010
-    Website:	http://code.google.com/p/careti
+    Author:     Simon Whitehead
+    Version:    1.0 
+    Updated:    11-03-2010
+    Website:    http://code.google.com/p/careti
     
     Acknowledgements:
-    	* Idea based on a script I found on Coding Forums by Astro-Boy
-    		http://www.codingforums.com/showthread.php?t=45976
-   		* Jim Biacolo et al. for compiling the list of misspellings
-   			http://www.autohotkey.com/download/
-   		* JavaScript UTF-8 encode/decode from WebToolKit
-   			http://www.webtoolkit.info/javascript-utf8.html
+     * Idea based on a script I found on Coding Forums by Astro-Boy
+       http://www.codingforums.com/showthread.php?t=45976
+     * Jim Biacolo et al. for compiling the list of misspellings
+       http://www.autohotkey.com/download/
+     * JavaScript UTF-8 encode/decode from WebToolKit
+       http://www.webtoolkit.info/javascript-utf8.html
     
     Features, notes and TODO have been moved to the Google Code Wiki.
     
