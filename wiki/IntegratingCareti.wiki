@@ -18,21 +18,12 @@ CARETI.init(); // first you must initialise
 CARETI.attachBody('textarea'); // attach to every textarea in document
 }}}
 
-Note the flexibility to specify the element type. You could also attach to `<input>` type elements although the behaviour is not ideal (see [UsingCareti quirks] page).
-
-=== Deep IFRAME Attachment ===
-
-Some pages contain `<iframe>` elements which may contain `<textarea>` elements within them. The passive attachment mode will not find these, so we have a separate function.
-
-{{{
-CARETI.init(); // initialise first
-CARETI.attachInsideIframes('textarea');
-}}}
+Note the flexibility to specify the element type. You could also attach to `<input>` type elements although the behaviour is not ideal (see the [UsingCareti quirks] page).
 
 
-=== Aggressive Attachment ===
+=== Aggressive/IFrame Attachment ===
 
-The aggressive attachment mode polls document for changes and should only be used on dynamic pages, as it is more expensive. This is the behaviour of the Greasemonkey version of the script.
+The aggressive attachment mode polls document for changes and is therefore more expensive. It should only be used on dynamic pages, or pages containing `<iframe>` elements. This is the behaviour of the Greasemonkey version of the script.
 
 {{{
 // no initialisation needed for polling version
@@ -56,11 +47,21 @@ The aggressive mode also checks inside `<iframe>` elements but only one level de
 </iframe>
 }}}
 
+For relatively static pages containing `<iframe>` elements, you may think this code should do the job:
+
+{{{
+CARETI.init(); // initialise first
+CARETI.attachInsideIframes('textarea');
+}}}
+
+However, my testing has shown that the `<iframe>` contents will not be loaded when `attachInsideIframes` is called, so best to use aggressive attachment.
+
 === Attaching to individual elements ===
 
 For JavaScript developers, Careti can also be attached to individual elements retrieved from the DOM. For example:
 
 {{{
+// initialise first
 var elem = document.getElementById('my_element');
 CARETI.addEventListeners(elem);
 }}}
