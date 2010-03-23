@@ -3,7 +3,6 @@
     
     Author:     Simon Whitehead
     Version:    1.0 
-    Updated:    11-03-2010
     Website:    http://code.google.com/p/careti
     
     Acknowledgements:
@@ -17,10 +16,11 @@
     Features, notes and TODO have been moved to the Google Code Wiki.
     
     $Id$
+    $URL$
     $Date$
     $Revision$
     $Author$
-    $URL$
+    
  
  */
 var CARETI = {
