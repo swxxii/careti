@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Careti - JavaScript AutoCorrect</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+    <body>
+        <h1>Careti - JavaScript AutoCorrect</h1>
+        <h2>Test Pages</h2>
+<table border="0" cellspacing="5">
+  <tr>
+    <td><strong>Type</strong></td>
+    <td><strong>Script Mode </strong></td>
+  </tr>
+  <tr>
+    <td><a href="test_utf8.html">UTF-8</a></td>
+    <td>In source </td>
+  </tr>
+  <tr>
+    <td><a href="test_ansi.html">ANSI/ISO-8859-1</a></td>
+    <td>In source</td>
+  </tr>
+  <tr>
+    <td><a href="test_iframe_m.html">IFrame</a></td>
+    <td>In source</td>
+  </tr>
+  <tr>
+    <td><a href="test_iframe.html">IFrame</a></td>
+    <td>Greasemonkey</td>
+  </tr>
+  <tr>
+    <td><a href="test_noscript.html">No Script </a></td>
+    <td>Greasemonkey</td>
+  </tr>
+</table>
+        <h2>Features</h2>
+        <ul>
+            <li>
+                Capitalise first letter of sentences
+            </li>
+            <li>
+                Correct 818 common typos (exported from MS Word 2007)
+            </li>
+            <li>
+                Insert accented characters e.g. café, naïve
+            </li>
+            <li>
+                Seamlessly preserve cursor and text box scroll position
+            </li>
+        </ul>
+        <h2>Known Bugs</h2>
+        <p>See the <a href="http://code.google.com/p/careti/issues/list">Google Code issues tracker</a> for current info</p>
+        <ul>
+            <li>
+                Type incorrect word, move cursor to start of word, type same word
+                again, corrects second word instead of first.
+            </li>
+            <li>
+                ANSI version broken in Safari (&amp; probably Chrome)
+            </li>
+            <li>
+                Untested in Firefox &lt; 3.6 and Safari &lt; 4
+            </li>
+        </ul>
+    </body>
+</html>
