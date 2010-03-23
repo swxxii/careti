@@ -8,7 +8,7 @@ First, download and include the script in your page header.
 <script type="text/javascript" src="careti.js">
 }}}
 
-Careti is neatly wrapped up in the `CARETI` object. There are a few different ways to attach the correction features to a `<textarea>` element. Simply insert the appropriate function calls at the end of the main `careti.js` script, or include as a separate script or inline `script` code.
+Careti is neatly wrapped up in the `CARETI` object. There are a few different ways to attach the correction features to a `<textarea>` element. You need to insert the appropriate function calls at the end of the main `careti.js` script, include as a separate/inline `<script>`.
 
 === Passive Attachment ===
 
