@@ -66,4 +66,4 @@ var elem = document.getElementById('my_element');
 CARETI.addEventListeners(elem);
 }}}
 
-This will add the required event listeners, enabling auto correction on the element you retrieved. The `addEventListeners` function can also be used within `for` loops after retrieving a set of elements, or anywhere else you like.
+This will add the required event listeners, enabling auto correction on the element you retrieved. Obviously you'll only want to attach to elements the user types into. The `addEventListeners` function can also be used within `for` loops after retrieving a set of elements, or anywhere else you like.
