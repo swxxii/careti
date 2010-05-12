@@ -30,7 +30,7 @@ The aggressive attachment mode polls document for changes and is therefore more 
 CARETI.attachPoller(1000); // poll interval of one second
 }}}
 
-The aggressive mode also checks inside `<iframe>` elements but only one level deep, e.g. The `<textarea>` with `id="1"` would be found, but the one with `id="2"` would not. 
+The aggressive mode also checks inside `<iframe>` elements but only one level deep. That is, `iframes` inside `iframes` will not be found. This is for performance reasons and simplicity of code. For example, consider the document structure below: `textarea#1` _will_ be found by the script, but `textarea#2` will not.
 
 {{{
 <iframe>
@@ -47,14 +47,14 @@ The aggressive mode also checks inside `<iframe>` elements but only one level de
 </iframe>
 }}}
 
-For relatively static pages containing `<iframe>` elements, you may think this code should do the job:
+You may think the code below should do the job for relatively static pages containing `<iframe>` elements.
 
 {{{
 CARETI.init(); // initialise first
 CARETI.attachInsideIframes('textarea');
 }}}
 
-However, my testing has shown that the `<iframe>` contents will not be loaded when `attachInsideIframes` is called, so best to use aggressive attachment.
+However, my testing has shown that the `<iframe>` contents will not be loaded when `attachInsideIframes` is called, so best to use the document polling method (aggressive).
 
 === Attaching to individual elements ===
 
